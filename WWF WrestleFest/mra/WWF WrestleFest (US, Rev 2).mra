@@ -1,0 +1,66 @@
+<misterromdescription>
+    <about author="pram0d" webpage="https://pram0d.com" source="https://github.com/Coin-OpCollection" twitter="@pr4m0d"/>
+    <name>WWF WrestleFest (US, Rev 2)</name>
+    <setname>wwfwfestu</setname>
+    <rbf>wf</rbf>
+    <mameversion>0246</mameversion>
+    <year>1991</year>
+    <manufacturer>Technos Japan</manufacturer>
+    <players>4</players>
+    <joystick>8-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>US</region>
+    <platform>Technos</platform>
+    <category>Wrestling</category>
+    <catver>Wrestling</catver>
+    <mraauthor>pram0d</mraauthor>
+    <rom index="0" zip="wwfwfestu.zip|wwfwfest.zip" md5="None" address="0x30000000">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="31a13-2.ic19" crc="7175bca7" map="10"/>
+            <part name="31a14-2.ic18" crc="5d06bfd1" map="01"/>
+        </interleave>
+
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="31a11-2.ic42" crc="5ddebfea"/>
+
+        <!-- oki - starts at 0x90000 -->
+        <part name="31j10.ic73" crc="6c522edb"/>
+
+        <!-- gfx1 - starts at 0x110000 -->
+        <part name="31a12-0.ic33" crc="d0803e20"/>
+
+        <!-- gfx3 - starts at 0x930000 -->
+        <part name="31j1.ic2" crc="82ed7155"/>
+        <part name="31j0.ic1" crc="8a12b450"/>
+
+        <!-- gfx2 - starts at 0x130000 -->
+        <part name="31j3.ic9" crc="e395cf1d"/>
+        <part name="31j2.ic8" crc="b5a97465"/>
+        <part name="31j5.ic11" crc="2ce545e8"/>
+        <part name="31j4.ic10" crc="00edb66a"/>
+        <part name="31j6.ic12" crc="79956cf8"/>
+        <part name="31j7.ic13" crc="74d774c3"/>
+        <part name="31j9.ic15" crc="dd387289"/>
+        <part name="31j8.ic14" crc="44abe127"/>
+
+        <!-- Total 0x9B0000 bytes - 9920 kBytes -->
+    </rom>
+    <switches default="FF,FF,FF">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Buy In Price" bits="2" ids="As start price,1"/>
+        <dip name="Regain Power Price" bits="3" ids="As start price,1"/>
+        <dip name="Continue Price" bits="4" ids="As start price,1"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="FBI Logo" bits="7" ids="Off,On"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Players" bits="10,11" ids="2,3,4"/>
+        <dip name="Unused" bits="12" ids="On,Off"/>
+        <dip name="Clear Stage Power Up" bits="13,14" ids="0,12,32,24"/>
+        <dip name="Championship Game" bits="15" ids="4th,5th"/>
+    </switches>
+    <buttons names="Punch,Kick,-,Start,Coin,Pause" default="Y,X,R,L,Start" count="2"/>
+</misterromdescription>

@@ -1,0 +1,71 @@
+<misterromdescription>
+    <about author="pram0d" webpage="https://pram0d.com" source="https://github.com/Coin-OpCollection" twitter="@pr4m0d"/>
+    <name>Double Dragon 3: The Rosetta Stone (US)</name>
+    <setname>ddragon3</setname>
+    <rbf>dd3</rbf>
+    <mameversion>0265</mameversion>
+    <year>1990</year>
+    <manufacturer>East Technology / Technos Japan</manufacturer>
+    <players>3</players>
+    <joystick>8-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>US</region>
+    <platform>Technos</platform>
+    <category>Side Scrolling / Beatem Up</category>
+    <catver>Beatem Up</catver>
+    <mraauthor>pram0d</mraauthor>
+    <rom index="0" zip="ddragon3.zip" md5="None" address="0x30000000">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="30a14-0.ic78" crc="f42fe016" map="10" length="0x20000"/>
+            <part name="30a15-0.ic79" crc="ad50e92c" map="01" length="0x20000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="30a14-0.ic78" crc="f42fe016" map="10" length="0x20000" offset="0x20000"/>
+            <part name="30a15-0.ic79" crc="ad50e92c" map="01" length="0x20000"/>
+        </interleave>
+
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="30a13-0.ic43" crc="1e974d9b"/>
+
+        <!-- oki - starts at 0x90000 -->
+        <part name="30j-8.ic73" crc="c3ad40f3"/>
+
+        <!-- gfx1 - starts at 0x110000 -->
+        <part name="30j-7.ic4" crc="89d58d32"/>
+        <part name="30j-6.ic5" crc="9bf1538e"/>
+        <part name="30j-5.ic6" crc="8f671a62"/>
+        <part name="30j-4.ic7" crc="0f74ea1c"/>
+
+        <!-- gfx2 - starts at 0x210000 -->
+        <part name="30j-3.ic9" crc="b3151871"/>
+        <part name="30a12-0.ic8" crc="20d64bea"/>
+        <part repeat="0x70000">00</part>
+        <part name="30j-2.ic11" crc="41c6fb08"/>
+        <part name="30a11-0.ic10" crc="785d71b0"/>
+        <part repeat="0x70000">00</part>
+        <part name="30j-1.ic13" crc="67a6f114"/>
+        <part name="30a10-0.ic12" crc="15e43d12"/>
+        <part repeat="0x70000">00</part>
+        <part name="30j-0.ic15" crc="f15dafbe"/>
+        <part name="30a9-0.ic14" crc="5a47e7a4"/>
+        <part repeat="0x70000">00</part>
+
+        <!-- Total 0x450000 bytes - 4416 kBytes -->
+    </rom>
+    <switches default="FF,FF,FF">
+        <!-- DSW A -->
+        <dip name="Coinage" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Continue Discount" bits="4" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <!-- DSW B -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Player Vs. Player Damage" bits="10" ids="On,Off"/>
+        <dip name="Service Mode" bits="12" ids="On,Off"/>
+        <dip name="Stage Clear Energy" bits="13" ids="Off,50"/>
+        <dip name="Starting Energy" bits="14" ids="200,230"/>
+        <dip name="Players" bits="15" ids="3,2"/>
+    </switches>
+    <buttons names="Punch,Jump,Kick,Start,Coin,Pause" default="Y,X,A,R,L,Start" count="3"/>
+</misterromdescription>
