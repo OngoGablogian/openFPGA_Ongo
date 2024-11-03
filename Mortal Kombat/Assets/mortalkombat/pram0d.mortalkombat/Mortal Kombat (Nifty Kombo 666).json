@@ -1,0 +1,37 @@
+{
+    "instance": {
+      "magic": "APF_VER_1",
+      "variant_select" : {
+        "id" : 0,
+        "select" : false
+      },
+      "data_slots": [
+        {
+          "id": 1,
+          "filename": "mknifty666.rom"
+        },
+        {
+          "id": 2,
+          "filename": "mknifty666.sav"
+        }
+      ],
+      "memory_writes": [
+        {
+          "address": "0xf9000000",
+          "data": "0xFFFFFFFF"
+        },
+        {
+          "address": "0xfa000000",
+          "data": "0x0000FFFF"
+        },
+        {
+          "address": "0xfa000004",
+          "data": "0x00000000"
+        },
+        {
+          "address": "0xfa000008",
+          "data": "0x0000000A"
+        }
+      ]
+    }
+  }
