@@ -10,7 +10,7 @@
     <joystick>8-way</joystick>
     <rotation>Horizontal</rotation>
     <region>World</region>
-    <platform>Technos</platform>
+    <platform>Technos 16</platform>
     <category>Wrestling</category>
     <catver>Wrestling</catver>
     <mraauthor>pram0d</mraauthor>
@@ -30,8 +30,8 @@
         <!-- gfx1 - starts at 0x110000 -->
         <part name="31e12-0.ic33" crc="06f22615"/>
 
-        <!-- gfx3 - starts at 0x930000 -->	
-        <part name="31j1.ic2" crc="82ed7155"/>			  
+        <!-- gfx3 - starts at 0x930000 -->
+        <part name="31j1.ic2" crc="82ed7155"/>
         <part name="31j0.ic1" crc="8a12b450"/>
 
         <!-- gfx2 - starts at 0x130000 -->
