@@ -1,0 +1,43 @@
+<misterromdescription>
+    <rom index="0" zip="ctribe.zip" md5="4f0d1530fcd57d1860e4c8e6363a3c91" address="0x30000000">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="28j15-2.ic25" crc="50aac7e7" map="01"/>
+            <part name="28j16-2.ic26" crc="658b8568" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="28j17-0.104" crc="8c2c6dbd" map="10"/>
+        <!-- interleave len 0x10000 -->
+            <part name="28j17-0.105" crc="d7978eeb" map="01"/>
+        </interleave>
+        <part repeat="0x20000">00</part>
+
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="28j10-0.89" crc="4346de13"/>
+        <part repeat="0x8000">00</part>
+
+        <!-- oki - starts at 0x90000 -->
+        <part name="28j9-0.ic83" crc="f92a7f4a"/>
+        <part name="28j8-0.ic82" crc="1a3a0b39"/>
+
+        <!-- gfx1 - starts at 0xD0000 -->
+        <part name="28j7-0.ic11" crc="a8b773f1"/>
+        <part name="28j6-0.ic13" crc="617530fc"/>
+        <part name="28j5-0.ic12" crc="cef0a821"/>
+        <part name="28j4-0.ic14" crc="b84fda09"/>
+
+        <!-- gfx2 - starts at 0x1D0000 -->
+        <part name="28j3-0.ic77" crc="1ac2a461"/>
+        <part name="28j14-0.60" crc="6869050a"/>
+        <part repeat="0x70000">00</part>
+        <part name="28j2-0.ic78" crc="8c796707"/>
+        <part name="28j13-0.61" crc="8b8addea"/>
+        <part repeat="0x70000">00</part>
+        <part name="28j1-0.ic97" crc="1c9badbd"/>
+        <part name="28j12-0.85" crc="422b041c"/>
+        <part repeat="0x70000">00</part>
+        <part name="28j0-0.ic98" crc="ba73c49e"/>
+        <part name="28j11-0.86" crc="4a391c5b"/>
+        <part repeat="0x10000">00</part>
+    </rom>
+</misterromdescription>
